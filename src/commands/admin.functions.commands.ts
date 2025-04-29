@@ -548,5 +548,3 @@ export async function pingCommand(client: WASocket, botInfo: Bot, message: Messa
     const replyText = buildText(adminCommands.ping.msgs.reply, systemName, cpuName, ramUsed, ramTotal, replyTime, currentUsers.length, currentGroups.length, botStarted)
     await waLib.replyText(client, message.chat_id, replyText, message.wa_message, {expiration: message.expiration})
 }
-
-
